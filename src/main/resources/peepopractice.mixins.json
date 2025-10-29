@@ -5,7 +5,6 @@
   "compatibilityLevel": "JAVA_8",
   "client": [
     "compat.timer.InGameTimerUtilsMixin",
-    "compat.timer.PracticeTimerManagerMixin",
     "compat.LocateCommandMixin",
     "compat.StandardSettingsMixin",
 

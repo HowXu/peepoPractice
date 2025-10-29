@@ -165,7 +165,7 @@ public class PracticeCategoriesAny {
                                             }
                                         }
                                     }
-                                    lastPos = lastPos.add(random.nextInt(100, 200) * mx, 0, random.nextInt(100, 200) * mz);
+                                    lastPos = lastPos.add((random.nextInt(100) * 2) * mx, 0, (random.nextInt(100) * 2) * mz);
                                 }
                             })
             ).setWorldProperties(
@@ -236,7 +236,7 @@ public class PracticeCategoriesAny {
                                 if (spawnLocation.equals(PreferenceTypes.SpawnLocationType.TERRAIN)) {
                                     int mx = random.nextBoolean() ? 1 : -1;
                                     int mz = random.nextBoolean() ? 1 : -1;
-                                    return new ChunkPos(random.nextInt(3, 4) * mx, random.nextInt(3, 4) * mz);
+                                    return new ChunkPos((random.nextInt(1) + 3) * mx, (random.nextInt(1) + 3) * mz);
                                 }
                                 return new ChunkPos(0, 0);
                             })
@@ -290,7 +290,7 @@ public class PracticeCategoriesAny {
             )
             .setPlayerProperties(
                     new PlayerProperties()
-                            .setSpawnPos((category, random, world) -> CustomPortalForcer.getPortalPosition(new BlockPos(random.nextInt(5, 15) * (random.nextBoolean() ? -1 : 1), 64, random.nextInt(5, 15) * (random.nextBoolean() ? -1 : 1)), world))
+                            .setSpawnPos((category, random, world) -> CustomPortalForcer.getPortalPosition(new BlockPos((random.nextInt(5) * 3) * (random.nextBoolean() ? -1 : 1), 64, (random.nextInt(5) * 3) * (random.nextBoolean() ? -1 : 1)), world))
                             .addPotionEffect(MiscPresets.FIRE_RESISTANCE_EFFECT)
             )
             .setWorldProperties(
@@ -429,7 +429,7 @@ public class PracticeCategoriesAny {
                             .setChunkPos(new ChunkPos(0, 0))
                             .setOrientation(Direction.SOUTH)
                             .setGeneratable(true)
-                            .setStructureTopY((category, random, world) -> random.nextInt(40, 55))
+                            .setStructureTopY((category, random, world) -> random.nextInt(40) + 15)
             )
             .setPlayerProperties(
                     new PlayerProperties()
