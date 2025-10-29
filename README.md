@@ -2,6 +2,10 @@
 
 PeepoPractice is a Fabric mod for 1.16.1 to practice splits of a Minecraft Any% speedrun. It includes things such as Bastion split, Fortress split, Stronghold split and more! It's a very lightweight and easy to use mod that can remove drastic amounts time from your average splits in real runs.
 
+# Warning
+
+conflict with lazystronghold
+
 # Discord
 
 [Join the Discord](https://discord.gg/s9m8gf6pju) to get access to pre-releases, get notified whenever a new update releases, and to see a detailed changelog for said update.
