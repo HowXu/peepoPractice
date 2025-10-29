@@ -71,7 +71,7 @@ public abstract class LevelLoadingScreenMixin extends Screen {
         int initialTextureWidth = 125;
         int maxTextureWidth = 320 - initialTextureWidth + this.width / 4;
         int textureWidth = (int) ((initialTextureWidth + (int) (maxTextureWidth * (percentage / 100.0F))) / 2.0F);
-        drawTexture(matrices, this.width / 2 - textureWidth / 2, this.height / 2 - textureHeight / 2 - this.textRenderer.fontHeight - this.height / 6 / 2, 0.0F, 0.0F, textureWidth, textureHeight, textureWidth, textureHeight);
+        // drawTexture(matrices, this.width / 2 - textureWidth / 2, this.height / 2 - textureHeight / 2 - this.textRenderer.fontHeight - this.height / 6 / 2, 0.0F, 0.0F, textureWidth, textureHeight, textureWidth, textureHeight);
     }
 
     @SuppressWarnings("deprecation")
